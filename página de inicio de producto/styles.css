@@ -123,6 +123,11 @@ main>h1 {
   padding: 120px 0 20px 0;
   font-size: 4.5rem;
   font-weight: 700;
+  background-image: url(https://topesdegama.com/app/uploads-topesdegama.com/2022/02/Uso-de-impresora-3D.jpg);
+  background-position: top;
+  color: #fff;
+  background-attachment: fixed;
+  text-shadow: 0 0 10px black;
 }
 
 section {
@@ -306,4 +311,73 @@ footer {
   display: grid;
   justify-content: center;
   text-align: center;
+}
+
+
+/*media Query*/
+@media (max-width: 1230px) {
+  #header nav ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #header nav {
+    flex: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #header {
+    flex-direction: column;
+    height: initial;
+  }
+
+  #como_funciona>ul>li:nth-child(2n+1) {
+    font-size: 1rem;
+  }
+
+  #print-scan-3d>div:nth-child(3)>details>p {
+    padding: 1rem 5rem;
+  }
+
+  #renta-y-venta>header {
+    grid-column: inherit;
+  }
+
+  #renta-y-venta {
+    grid-template-columns: initial;
+  }
+
+  #precios {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  #header {
+    position: absolute;
+    text-align: center;
+  }
+
+  #header nav ul {
+    flex-direction: column;
+  }
+
+  main>h1 {
+    padding: 220px 0 20px 0;
+  }
+
+  section {
+    padding: 20px 0 0 0;
+  }
+
+  section:last-child {
+    padding: 20px 0 120px 0;
+  }
+
+  #precios>div {
+    display: flex;
+    flex-direction: column;
+  }
 }
